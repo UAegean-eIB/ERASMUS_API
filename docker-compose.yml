@@ -1,0 +1,9 @@
+
+version: '2'
+services:
+  AasConnector:
+    image:  endimion13/aas-connector:0.0.1a
+    environment:
+      - POSTGRE_URI_AND_PORT=eidasiss.aegean.gr:5432
+    ports:
+      - 8090:8080
